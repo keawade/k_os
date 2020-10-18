@@ -78,8 +78,3 @@ pub fn exit_qemu(exit_code: QemuExitCode) {
         port.write(exit_code as u32);
     }
 }
-
-#[test_case]
-fn trivial_assertion() {
-    assert_eq!(0, 0);
-}
